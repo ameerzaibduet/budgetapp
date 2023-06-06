@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <div id="head">
+            <h3>Budgeting App</h3>
+        </div>
+        <div id="margin">
+            <div id="form">
+                <div id="budget">
+                    <h3>Total Budget</h3>
+                    <input type="text" id="input" name="getvalue" placeholder="Ex:35000.00">
+                    <input type="button" id="ipbutn" value="Set Budget" onclick="getbudget()">
+                </div>
+                <div id="itemfill">
+                    <div id="fillin">
+                        <div id="fillTage">Payment </div>
+                        <div class="row">
+                            <input type="button" name="btn" class="CatgBtn" value="Category">
+                            <select class="textBox" id="selectbox" >
+                                <option value="">Select Category</option>
+                                <option value="Cloths">Cloths</option>
+                                <option value="Food">Food</option>
+                                <option value="Health">Health</option>
+                                <option value="Shopping">Shopping</option>
+                                <option value="Mobile">Mobile</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <input type="button" name="btn" class="CatgBtn" value="Amount">
+                            <input type="text" placeholder="Ex: 3500" class="textBox" id="Amount">
+                        </div>
+                        <div class="row">
+                            <input type="button" name="btn" class="CatgBtn" value="Tax(8%)">
+                            <input type="text" placeholder="Ex: 3500" class="textBox" id="tax">
+                        </div>
+                        <div class="row">
+                            <input type="button" name="btn" class="CatgBtn" value="Pay Date">
+                            <input type="Date" class="textBox" id="date">
+                        </div>
+                        <div class="row">
+                            <input type="button" name="btn" id="submitbtn" value="Submit" onclick="submition()">
+                        </div>
+                    </div>
+                </div>
+               <div id="DTV"> <p id="CurrentDate">May-30-2023</p>
+                    <p>No. Of Transaction:<span><b id="Transactions"> 04</b></span></p> <p>Value:<span ><b  id="Value">04</b> </span></p> 
+            </div>
+        <div id="resultSection">
+            <div id="Budget">
+                <h3>Budget</h3>
+                <h3 id="Totalbudget">Rs:00.00</h3>
+            </div>
+            <div id="Expence">
+                <h3>Expense</h3>
+                <h4 id="Totalexpance">Rs: 00.00</h4>
+                <div id="ExpanceResult"><div id="ExpencePercrnt">00%</div></div>
+            </div>
+            <div id="Balance">
+                <h3>Balance</h3>
+                <h4 id="Totalbalance">Rs: 00.00</h4>
+                <Div id="BalanceResult"><div id="BalancePercrnt">00%</div></Div>
+            </div>
+        </div>
+        <div id="listBox">
+            <div class="listItem" id="list1" style="display: none;">
+               <div class="imgTitl"><img src="Food.png" alt="" height="20px" id="image1"><span id="discription1">Food Paid Bill</span> </div> 
+               <div class="tags"><span id="setdate1">4-jun-2023</span><span id="price1"> Rs: 200 </span><img src="tage.png" alt="" height="20px" id="image11"> <img src="cross.png" alt="" height="17px" id="image21"></div>
+            </div>
+            <div class="listItem" id="list2" style="display: none;">
+                <div class="imgTitl"><img src="Food.png" alt="" height="20px" id="image2"><span id="discription2">Food Paid Bill</span> </div> 
+                <div class="tags"><span id="setdate2"> 4-jun-2023 </span><span id="price2"> Rs: 200 </span><img src="tage.png" alt="" height="20px" id="image12"> <img src="cross.png" alt="" height="17px" id="image22"></div>
+             </div>
+             <div class="listItem" id="list3" style="display: none;">
+                <div class="imgTitl"><img src="Food.png" alt="" height="20px" id="image3" ><span id="discription3">Food Paid Bill</span> </div> 
+                <div class="tags"><span id="setdate3">4-jun-2023</span><span id="price3"> Rs: 200 </span><img src="tage.png" alt="" height="20px" id="image13"> <img src="cross.png" alt="" height="17px" id="image23"></div>
+             </div>
+             <div class="listItem" id="list4" style="display: none;">
+                <div class="imgTitl"><img src="Food.png" alt="" height="20px" id="image4"><span id="discription4">Food Paid Bill</span> </div> 
+                <div class="tags"><span id="setdate4">4-jun-2023</span><span id="price4"> Rs: 200 </span><img src="tage.png" alt="" height="20px" id="image14"> <img src="cross.png" alt="" height="17px" id="image24"></div>
+             </div>
+             <div class="listItem" id="list5" style="display: none;">
+                <div class="imgTitl"><img src="Food.png" alt="" height="20px" id="image5" ><span id="discription6">Food Paid Bill</span> </div> 
+                <div class="tags"><span id="setdate5">4-jun-2023</span><span id="price5"> Rs: 200 </span><img src="tage.png" alt="" height="20px" id="image15"> <img src="cross.png" alt="" height="17px" id="image25"></div>
+             </div>
+             <div class="listItem" id="list6" style="display: none;">
+                <div class="imgTitl"><img src="Food.png" alt="" height="20px" id="image6" ><span id="discription7">Food Paid Bill</span> </div> 
+                <div class="tags"><span id="setdate6">4-jun-2023</span><span id="price6"> Rs: 200 </span><img src="tage.png" alt="" height="20px" id="image16"> <img src="cross.png" alt="" height="17px" id="image26"></div>
+             </div>
+             <div class="listItem" id="list7" style="display: none;">
+                <div class="imgTitl"><img src="Food.png" alt="" height="20px"  id="image7"><span id="discription8">Food Paid Bill</span> </div> 
+                <div class="tags"><span id="setdate7">4-jun-2023</span><span id="price7"> Rs: 200 </span><img src="tage.png" alt="" height="20px" id="image17"> <img src="cross.png" alt="" height="17px" id="image27"></div>
+             </div>
+             <div class="listItem" id="list8" style="display: none;">
+                <div class="imgTitl"><img src="Food.png" alt="" height="20px" id="image8"><span id="discription9">Food Paid Bill</span> </div> 
+                <div class="tags"><span id="setdate8">4-jun-2023</span><span id="price8"> Rs: 200 </span><img src="tage.png" alt="" height="20px" id="image18"> <img src="cross.png" alt="" height="17px" id="image28"></div>
+             </div>
+             <div class="listItem" id="list9" style="display: none;">
+                <div class="imgTitl"><img src="Food.png" alt="" height="20px" id="image9"><span id="discription1">Food Paid Bill</span> </div> 
+                <div class="tags"><span id="setdate9">4-jun-2023</span><span id="price9"> Rs: 200 </span><img src="tage.png" alt="" height="20px" id="image19"> <img src="cross.png" alt="" height="17px" id="image29"></div>
+             </div>
+             
+           </div> 
+        </div>
+        </div>
+        <div id="foot"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

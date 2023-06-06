@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Bad+Script&family=Montserrat:wght@500&display=swap');
+body{
+    padding: 0px;
+    margin: 0px;
+}
+h3{
+    font-family: sans-serif;
+    font-weight:bold;
+    font-size: 12px;
+    margin-bottom:0px;
+    margin-top: 12px;
+}
+h4{
+    font-size: 10px;
+    margin-top:5px ;
+    margin-bottom: 17px;
+
+}
+#main{
+ width: 100%;
+ position: relative;
+ display: flex;
+ justify-content: center;
+ background-color: aqua;
+}
+#head{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(48, 109,0);
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+#head h3{
+font-family: 'Montserrat', sans-serif;
+    color:white;
+    position: absolute;
+    margin-top: 10px;
+    font-size: 15px;
+}
+#margin{
+    width: 86%;
+    height: 1100px;
+    position: absolute;
+   margin-top: 40px;
+
+}
+#form{
+    width: 100%;
+    height: 400px;
+    border: 1px solid rgb(48, 109,0);
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 7px 1px rgb(111, 111, 111);
+}
+#budget{
+    width: 300px;
+    height: 60px;
+
+    margin-top: 5px;
+    margin-left: 15px;
+    font-family: 'Montserrat',serif;
+    font-size: 10px;
+    margin-left: 5%;
+
+ 
+}
+#input{
+    border:1px solid black;
+    height: 20px;
+    border-radius: 5px;
+    
+
+}
+#ipbutn{
+    display: inline;
+    background-color:rgb(48, 109,0) ;
+    border: none;
+    height: 25px;
+    width: 80px;
+    color: white;
+    font-family: 'Montserrat',serif;
+    font-size: 11px;
+    border-radius: 5px;
+
+}
+#ipbutn:hover{
+    border: 1px solid rgb(48, 109,0);
+    background-color: white;
+    color: rgb(48, 109,0);
+}
+#itemfill{
+    width:100%;
+    height:300px;
+    margin-top: 25px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+#fillin{
+    border: 1px solid rgb(48, 109,0);
+    height: 95%;
+    width: 92%;
+    border-radius: 5px;
+    position: absolute;
+
+}
+#fillTage{
+    width: 70px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: 10px;
+    background-color: rgb(5, 36, 112);
+    color: white;
+    font-family: 'Montserrat',serif;
+    font-size: 12px;
+    padding: 3px;
+    padding-top: 4px;
+    text-align: center;
+}
+    
+.row{
+    width: 100%;
+    height: 25px;
+    display: block;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.CatgBtn{
+    width: 75px;
+    background-color:rgb(5, 36, 112);
+    border: none;
+    height: 110%;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat',serif;
+    font-size: 12px;
+}
+.textBox{
+    width:60%;
+    margin-left: 5px;
+    height: 100%;
+    background-color: white;
+    border: 1px solid rgb(5, 36, 112);
+}
+#submitbtn{
+    width: 30%;
+    background-color:rgb(5, 36, 112);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Montserrat',serif;
+
+}
+#submitbtn:hover{
+    border:1px solid rgb(5, 36, 112);
+    background-color: white;
+    color: rgb(5, 36, 112);
+}
+#DTV{
+    font-size: 10px;
+    color: gray;
+    width: 100%;
+    text-align: center;
+    font-family: 'Montserrat',serif;
+    display: flex;
+    justify-content:space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#resultSection{
+    width: 100%;
+    height: 80px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+#Budget{
+    width: 25%;
+    height: 100%;
+    border: 1px solid green;
+    box-shadow: 2px 2px 7px 1px rgb(111, 111, 111);
+    color: green;
+    border-radius: 10px;
+
+
+}
+#Budget h3{
+    margin-top: 15px;
+}
+#Expence{
+    width: 25%;
+    height: 100%;
+    border: 1px solid red;
+    box-shadow: 2px 2px 7px 1px rgb(111, 111, 111);
+    color: red;
+    border-radius: 10px;
+
+
+}
+#ExpanceResult{
+    width: 98.5%;
+    height: 16%;
+    
+    background-color: white;
+    font-size: 10px;
+}
+#ExpencePercrnt{
+    width: 00%;
+    height: 100%;
+    background-color:red;
+    color: white;
+    text-align: right;
+}
+
+#BalanceResult{
+    width: 98.5%;
+    height: 16%;
+   
+    background-color: white;
+    font-size: 10px;
+}
+#BalancePercrnt{
+    width: 00%;
+    height: 100%;
+    background-color:rgb(13, 79, 0);
+    color: white;
+    text-align: right;
+}
+#Balance{
+    width: 25%;
+    height: 100%;
+    border: 1px solid green;
+    box-shadow: 2px 2px 7px 1px rgb(111, 111, 111);
+    color:green ;
+    border-radius: 10px;
+    
+}
+#listBox{
+    width: 100%;
+    height: 460px;
+    border: 1px solid rgb(48, 109,0);
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 7px 1px rgb(111, 111, 111);
+
+
+}
+.listItem{
+    height: 25px;
+    width: 94%;
+    border: 1px solid rgb(48, 109,0);
+    margin-top: 20px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-around;
+    margin-left:3% ;
+}
+.listItem:hover{
+    box-shadow: 2px 2px 7px 1px rgb(111, 111, 111);
+
+}
+.imgTitl{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    margin-left: 5px;
+    margin-top: 2.5px;
+    font-family: 'Montserrat',serif;
+    font-size: 13px;
+    
+
+}
+.imgTitl span{
+    margin-left:15px;
+    margin-top: 2.5px;
+}
+.tags{width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content:space-between;
+    font-size: 10px;
+    color: rgb(45, 45, 45);
+}
+.tags img{
+    margin-top: 3px;
+    margin-right: 10px;
+
+}
+.tags span{
+    margin-top:6px;
+
+}
+#foot{
+    width: 100%;
+    height: 20px;
+    background-color:rgb(48, 109,0);
+    position: absolute;
+    margin-top: 1140px;
+
+}
