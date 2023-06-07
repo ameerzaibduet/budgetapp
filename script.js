@@ -88,5 +88,5 @@ function getbudget() {
      document.getElementById("discription"+count).innerHTML = document.getElementById("selectbox").value + " Paid Bill";
      document.getElementById("image"+count).src= images+".png";
      document.getElementById("price"+count).innerHTML="Rs: "+ (parseInt(AmountData) + parseInt(taxData));
-     document.getElementById("setdate"+count).innerHTML = new Date();
+     document.getElementById("setdate"+count).innerHTML = new Date().getDate()+"/"+ new Date().getMonth() +"/"+new Date().getFullYear();
   }
