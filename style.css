@@ -3,6 +3,10 @@ body{
     padding: 0px;
     margin: 0px;
 }
+:root{
+--Expence-color:red;
+--Balance-color:green;
+}
 h3{
     font-family: sans-serif;
     font-weight:bold;
@@ -194,9 +198,9 @@ font-family: 'Montserrat', sans-serif;
 #Expence{
     width: 25%;
     height: 100%;
-    border: 1px solid red;
+    border: 1px solid var(--Expence-color);
     box-shadow: 2px 2px 7px 1px rgb(111, 111, 111);
-    color: red;
+    color: var(--Expence-color);
     border-radius: 10px;
 
 
@@ -211,7 +215,7 @@ font-family: 'Montserrat', sans-serif;
 #ExpencePercrnt{
     width: 00%;
     height: 100%;
-    background-color:red;
+    background-color:var(--Expence-color);
     color: white;
     text-align: right;
 }
@@ -226,23 +230,23 @@ font-family: 'Montserrat', sans-serif;
 #BalancePercrnt{
     width: 00%;
     height: 100%;
-    background-color:rgb(13, 79, 0);
+    background-color:var(--Balance-color);
     color: white;
     text-align: right;
 }
 #Balance{
     width: 25%;
     height: 100%;
-    border: 1px solid green;
+    border: 1px solid var(--Balance-color);
     box-shadow: 2px 2px 7px 1px rgb(111, 111, 111);
-    color:green ;
+    color:var(--Balance-color);
     border-radius: 10px;
     
 }
 #listBox{
     width: 100%;
     height: 460px;
-    border: 1px solid rgb(48, 109,0);
+    border: 1px solid var(--Balance-color);
     margin-top: 30px;
     border-radius: 10px;
     box-shadow: 2px 2px 7px 1px rgb(111, 111, 111);
@@ -252,7 +256,7 @@ font-family: 'Montserrat', sans-serif;
 .listItem{
     height: 25px;
     width: 94%;
-    border: 1px solid rgb(48, 109,0);
+    border: 1px solid var(--Balance-color);
     margin-top: 20px;
     border-radius: 14px;
     display: flex;

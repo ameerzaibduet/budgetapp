@@ -16,6 +16,13 @@ var ExpenseCal;
 var count = 0;
 var ExpensePercrnt;
 var BalancePercrnt;
+function colours(){
+ExpenceColour =document.getElementsByValue(--Expence-color);
+BalanceColour =document.getElementsByValue(--Balance-color);
+if(ExpenseCal>=50){
+  ExpenceColour ="Orange";
+}
+}
 
 //function for set budget button.
 
