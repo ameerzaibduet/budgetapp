@@ -58,7 +58,8 @@ function getbudget() {
     BalancePercrnt.innerHTML = BalanceCal.toFixed(1)+"%";
     BalancePercrnt.style.width = BalanceCal+"%";
     document.getElementById("input").value ="";
-  }}
+  }
+}
 
 
   //function for submit button:
@@ -96,4 +97,6 @@ function getbudget() {
      document.getElementById("image"+count).src= images+".png";
      document.getElementById("price"+count).innerHTML="Rs: "+ (parseInt(AmountData) + parseInt(taxData));
      document.getElementById("setdate"+count).innerHTML = new Date().getDate()+"/"+ new Date().getMonth() +"/"+new Date().getFullYear();
-  }
+    
+
+    }
